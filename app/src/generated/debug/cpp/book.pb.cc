@@ -94,8 +94,8 @@ void protobuf_AddDesc_book_2eproto_impl() {
   protobuf_InitDefaults_book_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\nbook.proto\022\004bean\".\n\004Book\022\n\n\002id\030\001 \002(\005\022\014"
-    "\n\004name\030\002 \002(\t\022\014\n\004desc\030\003 \001(\tB\023\n\021net.protoc"
-    "ol.bean", 87);
+    "\n\004name\030\002 \002(\t\022\014\n\004desc\030\003 \001(\tB\036\n\021net.protoc"
+    "ol.beanB\tBookProto", 98);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "book.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_book_2eproto);

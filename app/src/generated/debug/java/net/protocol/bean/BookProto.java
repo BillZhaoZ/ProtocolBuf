@@ -3,8 +3,8 @@
 
 package net.protocol.bean;
 
-public final class BookOuterClass {
-  private BookOuterClass() {}
+public final class BookProto {
+  private BookProto() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -131,14 +131,14 @@ public final class BookOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return net.protocol.bean.BookOuterClass.internal_static_bean_Book_descriptor;
+      return net.protocol.bean.BookProto.internal_static_bean_Book_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return net.protocol.bean.BookOuterClass.internal_static_bean_Book_fieldAccessorTable
+      return net.protocol.bean.BookProto.internal_static_bean_Book_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              net.protocol.bean.BookOuterClass.Book.class, net.protocol.bean.BookOuterClass.Book.Builder.class);
+              net.protocol.bean.BookProto.Book.class, net.protocol.bean.BookProto.Book.Builder.class);
     }
 
     private int bitField0_;
@@ -299,10 +299,10 @@ public final class BookOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof net.protocol.bean.BookOuterClass.Book)) {
+      if (!(obj instanceof net.protocol.bean.BookProto.Book)) {
         return super.equals(obj);
       }
-      net.protocol.bean.BookOuterClass.Book other = (net.protocol.bean.BookOuterClass.Book) obj;
+      net.protocol.bean.BookProto.Book other = (net.protocol.bean.BookProto.Book) obj;
 
       boolean result = true;
       result = result && (hasId() == other.hasId());
@@ -348,58 +348,58 @@ public final class BookOuterClass {
       return hash;
     }
 
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(
+    public static net.protocol.bean.BookProto.Book parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(
+    public static net.protocol.bean.BookProto.Book parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(byte[] data)
+    public static net.protocol.bean.BookProto.Book parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(
+    public static net.protocol.bean.BookProto.Book parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(java.io.InputStream input)
+    public static net.protocol.bean.BookProto.Book parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(
+    public static net.protocol.bean.BookProto.Book parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseDelimitedFrom(java.io.InputStream input)
+    public static net.protocol.bean.BookProto.Book parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseDelimitedFrom(
+    public static net.protocol.bean.BookProto.Book parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(
+    public static net.protocol.bean.BookProto.Book parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static net.protocol.bean.BookOuterClass.Book parseFrom(
+    public static net.protocol.bean.BookProto.Book parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -411,7 +411,7 @@ public final class BookOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(net.protocol.bean.BookOuterClass.Book prototype) {
+    public static Builder newBuilder(net.protocol.bean.BookProto.Book prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -431,20 +431,20 @@ public final class BookOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:bean.Book)
-        net.protocol.bean.BookOuterClass.BookOrBuilder {
+        net.protocol.bean.BookProto.BookOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return net.protocol.bean.BookOuterClass.internal_static_bean_Book_descriptor;
+        return net.protocol.bean.BookProto.internal_static_bean_Book_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return net.protocol.bean.BookOuterClass.internal_static_bean_Book_fieldAccessorTable
+        return net.protocol.bean.BookProto.internal_static_bean_Book_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                net.protocol.bean.BookOuterClass.Book.class, net.protocol.bean.BookOuterClass.Book.Builder.class);
+                net.protocol.bean.BookProto.Book.class, net.protocol.bean.BookProto.Book.Builder.class);
       }
 
-      // Construct using net.protocol.bean.BookOuterClass.Book.newBuilder()
+      // Construct using net.protocol.bean.BookProto.Book.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -472,23 +472,23 @@ public final class BookOuterClass {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return net.protocol.bean.BookOuterClass.internal_static_bean_Book_descriptor;
+        return net.protocol.bean.BookProto.internal_static_bean_Book_descriptor;
       }
 
-      public net.protocol.bean.BookOuterClass.Book getDefaultInstanceForType() {
-        return net.protocol.bean.BookOuterClass.Book.getDefaultInstance();
+      public net.protocol.bean.BookProto.Book getDefaultInstanceForType() {
+        return net.protocol.bean.BookProto.Book.getDefaultInstance();
       }
 
-      public net.protocol.bean.BookOuterClass.Book build() {
-        net.protocol.bean.BookOuterClass.Book result = buildPartial();
+      public net.protocol.bean.BookProto.Book build() {
+        net.protocol.bean.BookProto.Book result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public net.protocol.bean.BookOuterClass.Book buildPartial() {
-        net.protocol.bean.BookOuterClass.Book result = new net.protocol.bean.BookOuterClass.Book(this);
+      public net.protocol.bean.BookProto.Book buildPartial() {
+        net.protocol.bean.BookProto.Book result = new net.protocol.bean.BookProto.Book(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -535,16 +535,16 @@ public final class BookOuterClass {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof net.protocol.bean.BookOuterClass.Book) {
-          return mergeFrom((net.protocol.bean.BookOuterClass.Book)other);
+        if (other instanceof net.protocol.bean.BookProto.Book) {
+          return mergeFrom((net.protocol.bean.BookProto.Book)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(net.protocol.bean.BookOuterClass.Book other) {
-        if (other == net.protocol.bean.BookOuterClass.Book.getDefaultInstance()) return this;
+      public Builder mergeFrom(net.protocol.bean.BookProto.Book other) {
+        if (other == net.protocol.bean.BookProto.Book.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -577,11 +577,11 @@ public final class BookOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        net.protocol.bean.BookOuterClass.Book parsedMessage = null;
+        net.protocol.bean.BookProto.Book parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (net.protocol.bean.BookOuterClass.Book) e.getUnfinishedMessage();
+          parsedMessage = (net.protocol.bean.BookProto.Book) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -790,12 +790,12 @@ public final class BookOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:bean.Book)
-    private static final net.protocol.bean.BookOuterClass.Book DEFAULT_INSTANCE;
+    private static final net.protocol.bean.BookProto.Book DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new net.protocol.bean.BookOuterClass.Book();
+      DEFAULT_INSTANCE = new net.protocol.bean.BookProto.Book();
     }
 
-    public static net.protocol.bean.BookOuterClass.Book getDefaultInstance() {
+    public static net.protocol.bean.BookProto.Book getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -818,7 +818,7 @@ public final class BookOuterClass {
       return PARSER;
     }
 
-    public net.protocol.bean.BookOuterClass.Book getDefaultInstanceForType() {
+    public net.protocol.bean.BookProto.Book getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -839,8 +839,8 @@ public final class BookOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\nbook.proto\022\004bean\".\n\004Book\022\n\n\002id\030\001 \002(\005\022\014" +
-      "\n\004name\030\002 \002(\t\022\014\n\004desc\030\003 \001(\tB\023\n\021net.protoc" +
-      "ol.bean"
+      "\n\004name\030\002 \002(\t\022\014\n\004desc\030\003 \001(\tB\036\n\021net.protoc" +
+      "ol.beanB\tBookProto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

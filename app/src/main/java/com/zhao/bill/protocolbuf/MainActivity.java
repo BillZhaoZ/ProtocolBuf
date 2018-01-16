@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 
-import net.protocol.bean.BookOuterClass;
+import com.example.tutorial.AddressBookProtos;
+
+import net.protocol.bean.BookProto;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.textTest);
 
-        BookOuterClass.Book book = BookOuterClass.Book.newBuilder()
+        BookProto.Book book = BookProto.Book.newBuilder()
                 .setId(1)
                 .setName("一江夜雨")
                 .setDesc("Read the fuck code!!!")
@@ -35,6 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
         save(book);
         read();
+
+        AddressBookProtos.Person john =
+                AddressBookProtos.Person.newBuilder()
+                        .setId(1234)
+                        .setName("John Doe")
+                        .setEmail("jdoe@example.com")
+                        .addPhone(
+                                AddressBookProtos.Person.PhoneNumber.newBuilder()
+                                        .setNumber("555-4321")
+                                        .setType(AddressBookProtos.Person.PhoneType.HOME))
+                        .build();
     }
 
     /**
@@ -42,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param book
      */
-    private void save(BookOuterClass.Book book) {
+    private void save(BookProto.Book book) {
         File dir = Environment.getExternalStorageDirectory();
         File file = new File(dir, SRC_DIR);
 
@@ -73,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 out.flush();
             }
 
-            BookOuterClass.Book book = BookOuterClass.Book.parseFrom(out.toByteArray());
+            BookProto.Book book = BookProto.Book.parseFrom(out.toByteArray());
             out.close();
 
             textView.setText("name: " + book.getName() + " ,desc: " + book.getDesc());
